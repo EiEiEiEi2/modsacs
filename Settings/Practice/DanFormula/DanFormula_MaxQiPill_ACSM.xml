@@ -1,0 +1,76 @@
+<!--
+  *** THIS FILE IS A TEMPLATE / BEST GUESS - PLEASE VERIFY BEFORE TRUSTING IT ***
+
+  Unlike the Modifier and Esoterica files in this mod, I could not find a published, confirmed
+  schema for <DanFormula> (the actual alchemy recipe: which furnace/building it needs, which
+  ingredients - e.g. Wood - and how many, crafting time, success rate, output item & count).
+  Even the most detailed community modding guide marks this part as undocumented.
+
+  Recommended safe approach instead of trusting this file blindly:
+  1. On your phone, open a file manager with access to:
+     /storage/emulated/0/Android/data/com.GSQ.XiaWorld.googleplay/files/Settings/Practice/DanFormula/Dan.xml
+     (this is the REAL file with the actual working recipes - it's read-only data, copy it out first)
+  2. Find any existing <DanFormula> entry for a simple pill made with a basic material
+     (e.g. search for "Item_Dan_SanHuaHuangJing" = Trimerous Essence Pill, a known Max Qi pill).
+  3. Copy that whole <DanFormula>...</DanFormula> block 4 times into a new file under
+     Mods/ACSM_MaxQiPill/Settings/Practice/DanFormula/, rename each Name="..." to
+     DanFormula_MuLingDan_T1..T4, change its output item to Item_Dan_MuLingDan_T1..T4,
+     and swap whatever ingredient list it has for your Wood item (internal Wood item names
+     are typically things like "Wood", "WoodLog", or a tier-specific log name - check
+     Settings/ThingDef/Item for the exact internal name on your device).
+  4. Leave the <Building> reference as whatever Alchemy Furnace it already points to.
+
+  This guarantees a working recipe because it's based on real, already-functioning game data,
+  instead of guessed tag names that might silently fail to load.
+
+  The block below is only a placeholder showing the conceptual shape, based on the documented
+  ProduceModeData/ProductData attribute names (Building, Count) - the ingredient-list tag name
+  is my best guess and NOT confirmed.
+-->
+<DanFormulas><List>
+
+	<DanFormula Name="DanFormula_MuLingDan_T1">
+		<ThingDefName>Item_Dan_MuLingDan_T1</ThingDefName>
+		<Count>1</Count>
+		<Building>FireFurnace</Building> <!-- VERIFY: replace with the real internal name of an Alchemy Furnace -->
+		<NeedThings> <!-- UNCONFIRMED TAG NAME -->
+			<li ThingDef="Wood" Count="10"/> <!-- VERIFY: replace "Wood" with the real internal Wood item name -->
+		</NeedThings>
+		<Work>600</Work>
+		<SuccessRate>1</SuccessRate>
+	</DanFormula>
+
+	<DanFormula Name="DanFormula_MuLingDan_T2">
+		<ThingDefName>Item_Dan_MuLingDan_T2</ThingDefName>
+		<Count>1</Count>
+		<Building>FireFurnace</Building>
+		<NeedThings>
+			<li ThingDef="Wood" Count="40"/>
+		</NeedThings>
+		<Work>1200</Work>
+		<SuccessRate>0.9</SuccessRate>
+	</DanFormula>
+
+	<DanFormula Name="DanFormula_MuLingDan_T3">
+		<ThingDefName>Item_Dan_MuLingDan_T3</ThingDefName>
+		<Count>1</Count>
+		<Building>FireFurnace</Building>
+		<NeedThings>
+			<li ThingDef="Wood" Count="100"/>
+		</NeedThings>
+		<Work>2400</Work>
+		<SuccessRate>0.8</SuccessRate>
+	</DanFormula>
+
+	<DanFormula Name="DanFormula_MuLingDan_T4">
+		<ThingDefName>Item_Dan_MuLingDan_T4</ThingDefName>
+		<Count>1</Count>
+		<Building>FireFurnace</Building>
+		<NeedThings>
+			<li ThingDef="Wood" Count="300"/>
+		</NeedThings>
+		<Work>4800</Work>
+		<SuccessRate>0.7</SuccessRate>
+	</DanFormula>
+
+</List></DanFormulas>

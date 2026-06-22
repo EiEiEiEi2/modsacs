@@ -1,0 +1,69 @@
+<!--
+  This part follows the documented Esoterica/Manual pattern exactly (see Manuals(Esoterica).md):
+  an Esoterica of Type="Dan" lists the DanFormula name(s) it unlocks under <Dans>.
+  The DanFormula names referenced here (DanFormula_MuLingDan_T1..T4) are defined in the
+  DanFormula_MaxQiPill_ACSM.xml file - see the warning in that file, the recipe schema itself
+  is the unverified part, not this manual-unlock part.
+
+  If you don't want to bother with "discovering/learning" a manual at all, you can instead use
+  MODModifier (the in-game admin/cheat mod) to just grant the manual or the item directly for testing.
+-->
+<EsotericaDefs><List>
+
+	<Esoterica Name="Esoterica_MaxQiPill_T1">
+		<DisplayName>丹方：木灵丹·一品</DisplayName>
+		<Desc>记载了以寻常木材炼制木灵丹·一品的方法。</Desc>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<GLevel>None</GLevel>
+		<Element>Mu</Element>
+		<Type>Dan</Type>
+		<EffectDesc>习得 丹方：木灵丹·一品</EffectDesc>
+		<Dans>
+			<li>DanFormula_MuLingDan_T1</li>
+		</Dans>
+	</Esoterica>
+
+	<Esoterica Name="Esoterica_MaxQiPill_T2">
+		<DisplayName>丹方：木灵丹·二品</DisplayName>
+		<Desc>记载了以寻常木材炼制木灵丹·二品的方法。</Desc>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<GLevel>None</GLevel>
+		<Element>Mu</Element>
+		<Type>Dan</Type>
+		<EffectDesc>习得 丹方：木灵丹·二品</EffectDesc>
+		<Dans>
+			<li>DanFormula_MuLingDan_T2</li>
+		</Dans>
+	</Esoterica>
+
+	<Esoterica Name="Esoterica_MaxQiPill_T3">
+		<DisplayName>丹方：木灵丹·三品</DisplayName>
+		<Desc>记载了以寻常木材炼制木灵丹·三品的方法。</Desc>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<GLevel>None</GLevel>
+		<Element>Mu</Element>
+		<Type>Dan</Type>
+		<EffectDesc>习得 丹方：木灵丹·三品</EffectDesc>
+		<Dans>
+			<li>DanFormula_MuLingDan_T3</li>
+		</Dans>
+	</Esoterica>
+
+	<Esoterica Name="Esoterica_MaxQiPill_T4">
+		<DisplayName>丹方：木灵丹·四品</DisplayName>
+		<Desc>记载了以寻常木材炼制木灵丹·四品的方法。</Desc>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<GLevel>None</GLevel>
+		<Element>Mu</Element>
+		<Type>Dan</Type>
+		<EffectDesc>习得 丹方：木灵丹·四品</EffectDesc>
+		<Dans>
+			<li>DanFormula_MuLingDan_T4</li>
+		</Dans>
+	</Esoterica>
+
+</List></EsotericaDefs>

@@ -1,0 +1,85 @@
+<!--
+  WARNING / IMPORTANT NOTE FOR THIS FILE:
+  The general ThingDef attributes below (Type, Tags, IllustratedHandLabel, MaxStack, Rate, etc.)
+  follow the documented schema 1:1.
+
+  However the exact tag(s) that make "eating this item applies a Modifier" (i.e. the inside of
+  <Item><Drug>...</Drug></Item> or <Item><Elixir>...</Elixir></Item>) are NOT published in any
+  modding documentation I could verify - the official community guide itself marks ElixirData/
+  DrugData as "TBS" (to be specified). The <Drug><Modifiers> block below is my best reconstruction
+  based on how Modifiers are referenced everywhere else in the game (a list of <li>ModifierName</li>),
+  but it is UNVERIFIED. If it doesn't work in-game, the safe fix is to copy the <Item><Drug>...</Item>
+  (or <Elixir>) block straight from an existing Max Qi pill in your own game files (e.g. Trimerous
+  Essence Pill, internal name Item_Dan_SanHuaHuangJing) and just point its Modifier reference to
+  Modifier_MaxQiPill_T1..T4 instead. See the README for exactly where to find that file.
+-->
+<ThingDefs><List>
+
+	<ThingDef Type="Item" Name="Item_Dan_MuLingDan_T1">
+		<Rate>1</Rate>
+		<MaxStack>20</MaxStack>
+		<Beauty>0</Beauty>
+		<ThingName>木灵丹·一品</ThingName>
+		<Desc>以寻常木材炼制的灵丹，服用后可提升修真者灵气上限1,000点。</Desc>
+		<ElementKind>Mu</ElementKind>
+		<IllustratedHandLabel>Dan</IllustratedHandLabel>
+		<Tags>
+			<li>_Dan</li>
+		</Tags>
+		<Item>
+			<Kind>Consumable</Kind>
+			<Lable>Dan</Lable>
+			<Drug>
+				<Modifiers>
+					<li>Modifier_MaxQiPill_T1</li>
+				</Modifiers>
+			</Drug>
+		</Item>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_Dan_MuLingDan_T2" Parent="Item_Dan_MuLingDan_T1">
+		<Rate>2</Rate>
+		<ThingName>木灵丹·二品</ThingName>
+		<Desc>以寻常木材炼制的灵丹，服用后可提升修真者灵气上限10,000点。</Desc>
+		<Item>
+			<Kind>Consumable</Kind>
+			<Lable>Dan</Lable>
+			<Drug>
+				<Modifiers>
+					<li>Modifier_MaxQiPill_T2</li>
+				</Modifiers>
+			</Drug>
+		</Item>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_Dan_MuLingDan_T3" Parent="Item_Dan_MuLingDan_T1">
+		<Rate>3</Rate>
+		<ThingName>木灵丹·三品</ThingName>
+		<Desc>以寻常木材炼制的灵丹，服用后可提升修真者灵气上限100,000点。</Desc>
+		<Item>
+			<Kind>Consumable</Kind>
+			<Lable>Dan</Lable>
+			<Drug>
+				<Modifiers>
+					<li>Modifier_MaxQiPill_T3</li>
+				</Modifiers>
+			</Drug>
+		</Item>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_Dan_MuLingDan_T4" Parent="Item_Dan_MuLingDan_T1">
+		<Rate>4</Rate>
+		<ThingName>木灵丹·四品</ThingName>
+		<Desc>以寻常木材炼制的灵丹，服用后可提升修真者灵气上限1,000,000点。</Desc>
+		<Item>
+			<Kind>Consumable</Kind>
+			<Lable>Dan</Lable>
+			<Drug>
+				<Modifiers>
+					<li>Modifier_MaxQiPill_T4</li>
+				</Modifiers>
+			</Drug>
+		</Item>
+	</ThingDef>
+
+</List></ThingDefs>
