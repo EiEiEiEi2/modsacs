@@ -1,7 +1,7 @@
 {
   "Name": "ACSM_MaxQiPill",
   "DisplayName": "Wood Qi Pill Pack (1k/10k/100k/1m Max Qi)",
-  "GameVersion": 1.177,
+  "GameVersion": 1.2,
   "Version": 1.0,
   "Desc": "Adds 4 tiers of Max Qi pills (Wood Spirit Pill) craftable at the Alchemy Furnace using Wood. +1,000 / +10,000 / +100,000 / +1,000,000 Max Qi.",
   "Author": "you"
